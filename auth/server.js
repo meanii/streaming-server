@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }))
 
 app.post('/auth', function (req, res) {
   /* This server is only available to nginx */ 
