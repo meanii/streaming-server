@@ -5,7 +5,9 @@ app.use(express.urlencoded({ extended: true }))
 
 app.post('/auth', function (req, res) {
   /* This server is only available to nginx */ 
-  const streamkey = res.body.key;
+  if (req.body.key) {
+      var streamkey = req.body.key;
+  }
   
   /* You can make a database of user instead */
   if (streamkey === "secretkey") return res.status(200).send();
