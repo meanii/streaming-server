@@ -1,6 +1,6 @@
-# Live Stream Server 
+# Live Streaming Server 
 
-### what's live server?
+### what's live streaming server?
 This can be used to create an RTMP server for multimedia / video streaming using Nginx and nginx-rtmp-module, built from the current latest sources (Nginx 1.15.0 and nginx-rtmp-module 1.2.1).
 ### use case
 The main purpose (and test case) to build it was to allow streaming from OBS Studio to different clients at the same time.
