@@ -7,8 +7,11 @@ const PASSWORD = process.env.PASSWORD || 'secretkey';
 
 app.use(express.urlencoded({ extended: true }))
 
+
 app.post('/auth', function (req, res) {
-  console.log(req)
+  console.log(`received request from ${req.ip} for /auth`)
+
+  res.status(200).send();
   /* This server is only available to nginx */ 
   if (req.body.key) var streamkey = req.body.key;
   
@@ -20,7 +23,8 @@ app.post('/auth', function (req, res) {
 });
 
 app.post('/on_publish_done', function (req, res) {
-  console.log(req)
+  console.log(`received request from ${req.ip} for /on_publish_done`)
+  console.log(req.body)
 });
 
 
