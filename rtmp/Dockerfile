@@ -12,6 +12,9 @@ ENV HTTP_PORT=80
 ENV HTTPS_PORT=443
 ENV RTMP_PORT=1935
 ENV ENC_DOMAIN=enc.meanii.dev
+ENV AUTH_API=auth_server:8000
+
+# Set non-interactive mode
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install essential build dependencies

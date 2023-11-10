@@ -57,6 +57,7 @@ docker compose up -d
 | `NGINX_RTMP_PORT` | nginx-rtmp-module port | `1935` |
 | `NGINX_HTTP_PORT` | nginx http port | `80` |
 | `ENC_DOMAIN` | domain name for encryption | `enc.meanii.dev` |
+| `AUTH_API` | authentication api url | `http://auth_server:8000` |
 
 
 # known issues

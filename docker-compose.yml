@@ -8,6 +8,7 @@ services:
       - HTTP_PORT=80
       - RTMP_PORT=1935
       - ENC_DOMAIN=enc.meanii.dev
+      - AUTH_API=auth_server:8000
     container_name: rtmp_server
     volumes:
       - ./data:/opt/data
