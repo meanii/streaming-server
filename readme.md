@@ -61,7 +61,7 @@ docker compose up -d
 
 
 # known issues
-- [ ] exec_record_done not triggered when stream is stopped
+- [ ] exec_record_done not triggered when stream is stopped, the temporary solution is to use `exec_record_done` in `exec_on_publish` directive
 
 # credits
 - [nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module)
