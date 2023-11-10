@@ -18,8 +18,9 @@ Docker image for nginx-rtmp-module + FFmpeg from source with basic settings for 
 ## prerequisites
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - Ubuntu 20.04 LTS (recommended)
-- Make sure ports `80` and `1935` are not in use and open for use
-- Make sure you have a domain name with active ssl for encryption
+- Make sure ports `80` and `1935` are not in use
+- Make sure ports `80` and `1935` are open
+- Make sure you have a domain name for encryption
 
 ## docker compose installation
 ```bash
